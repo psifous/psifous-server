@@ -18,6 +18,16 @@ describe('TESTING ADMIN', () => {
       CommunityId : 5
     }
 
+    const errData = {
+      email: 'test1@email.com',
+      first_name: 'test',
+      last_name: 'doang',
+      password : 'hashpassword',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+      CommunityId : 5
+    }
+
   it('should register admin', function(done){
     chai
     .request(app)
@@ -37,6 +47,18 @@ describe('TESTING ADMIN', () => {
       .then(()=>{
         done()
       })
+    })
+  })
+
+  it('should error when register admin', function(done){
+    chai
+    .request(app)
+    .post('/api/admins/')
+    .send(errData)
+    .end((err, res) => {
+      let data = res.body
+      expect(res).to.have.status(400)
+      done()
     })
   })
 

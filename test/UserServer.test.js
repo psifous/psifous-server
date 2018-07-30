@@ -17,6 +17,15 @@ describe('TESTING USER', () => {
       updatedAt: new Date()
     }
 
+    const errData = {
+      email : 'testadmin1@email.com',
+      first_name: 'test',
+      last_name: 'doang',
+      password : 'hashpassword',
+      createdAt: new Date(),
+      updatedAt: new Date()
+    }
+
   it('should register user', function(done){
     chai
     .request(app)
@@ -36,6 +45,18 @@ describe('TESTING USER', () => {
       .then(()=>{
         done()
       })
+    })
+  })
+
+  it('should err when register user', function(done){
+    chai
+    .request(app)
+    .post('/api/users/')
+    .send(errData)
+    .end((err, res) => {
+      let data = res.body
+      expect(res).to.have.status(400)
+      done()
     })
   })
 

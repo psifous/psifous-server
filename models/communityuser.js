@@ -1,8 +1,16 @@
-'use strict';
+const Sequelize = require('sequelize')
+
+
 module.exports = (sequelize, DataTypes) => {
   var CommunityUser = sequelize.define('CommunityUser', {
-    UserId: DataTypes.INTEGER,
-    CommunityId: DataTypes.INTEGER
+    UserId: {
+      type: Sequelize.INTEGER,
+      allowNull: false,
+    },
+    CommunityId: {
+      type: Sequelize.INTEGER,
+      allowNull: false,
+    }
   }, {});
   CommunityUser.associate = function(models) {
     // associations can be defined here

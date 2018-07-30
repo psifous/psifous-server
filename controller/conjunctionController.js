@@ -20,7 +20,7 @@ module.exports={
     })
   },
   deleteConjunction:(req,res)=>{
-    db.CommunityUser.delete({where:{
+    db.CommunityUser.destroy({where:{
       UserId: req.body.UserId , CommunityId : req.body.CommunityId
     }})
     .then((value)=>{

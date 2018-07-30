@@ -1,5 +1,6 @@
 const db = require('../models')
 
+
 module.exports = {
   register : (req,res)=>{
     db.User.create({
@@ -68,10 +69,10 @@ module.exports = {
         message:'berhasil update data',
         value
       })
-      .catch((err)=>{
-        res.status(400).json({
-          message: 'terjadi kesalahan saat mengupdate data'
-        })
+    })
+    .catch((err)=>{
+      res.status(400).json({
+        message: 'terjadi kesalahan saat mengupdate data'
       })
     })
   },

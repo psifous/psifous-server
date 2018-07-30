@@ -68,10 +68,10 @@ module.exports = {
         message:'berhasil update data admin',
         value
       })
-      .catch((err)=>{
-        res.status(400).json({
-          message: 'terjadi kesalahan saat mengupdate data admin'
-        })
+    })
+    .catch((err)=>{
+      res.status(400).json({
+        message: 'terjadi kesalahan saat mengupdate data admin'
       })
     })
   },

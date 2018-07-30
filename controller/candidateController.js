@@ -85,10 +85,10 @@ module.exports = {
         message:'berhasil delete candidate',
         value
       })
-      .catch((err)=>{
-        res.status(400).json({
-          message:'gagal hapus candidate'
-        })
+    })
+    .catch((err)=>{
+      res.status(400).json({
+        message:'gagal hapus candidate'
       })
     })
   }

@@ -4,7 +4,7 @@ const { createConjunction,deleteConjunction } = require('../controller/conjuncti
 
 
 router.post('/',createConjunction)
-router.delete('/',deleteConjunction)
+router.post('/delete',deleteConjunction)
 
 
 module.exports = router;

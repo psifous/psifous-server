@@ -16,11 +16,11 @@ module.exports = {
         })
       }
     })
-    .catch((err)=>{
-      res.status(400).json({
-        message: 'terjadi kesalahan saat mendaftar'
-      })
-    })
+    // .catch((err)=>{
+    //   res.status(400).json({
+    //     message: 'terjadi kesalahan saat mendaftar'
+    //   })
+    // })
   },
 
   checkAdmin:(req,res,next)=>{
@@ -38,10 +38,10 @@ module.exports = {
         })
       }
     })
-    .catch((err)=>{
-      res.status(400).json({
-        message: 'terjadi kesalahan saat mendaftar'
-      })
-    })
+    // .catch((err)=>{
+    //   res.status(400).json({
+    //     message: 'terjadi kesalahan saat mendaftar'
+    //   })
+    // })
   }
 }
