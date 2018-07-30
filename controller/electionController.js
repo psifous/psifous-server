@@ -44,7 +44,8 @@ module.exports ={
     db.Election.find({
       where:{id:req.params.id},
       include:[
-        db.Candidate
+        db.Candidate,
+        db.User
       ]
     })
     .then((value)=>{

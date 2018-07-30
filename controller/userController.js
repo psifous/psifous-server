@@ -7,7 +7,8 @@ module.exports = {
       email : req.body.email,
       first_name : req.body.first_name,
       last_name:req.body.last_name,
-      password : req.body.password
+      password : req.body.password,
+      blockchainAddress : req.body.blockchainAddress
     })
     .then((value)=>{
       res.status(200).json({
@@ -44,7 +45,8 @@ module.exports = {
         id: req.params.id
       },
       include:[
-        db.Community
+        db.Community,
+        db.Election
       ]
     })
     .then((value)=>{

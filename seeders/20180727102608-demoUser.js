@@ -5,6 +5,7 @@ module.exports = {
       first_name: 'test1',
       last_name: 'test',
       password: "12345",
+      blockchainAddress : 'www.google.com',
       createdAt: new Date(),
       updatedAt: new Date()
     },{
@@ -12,6 +13,7 @@ module.exports = {
       first_name: 'test2',
       last_name: 'test',
       password: "12345",
+      blockchainAddress : 'www.google.com',
       createdAt: new Date(),
       updatedAt: new Date()
     },{
@@ -19,6 +21,7 @@ module.exports = {
       first_name: 'test3',
       last_name: 'test',
       password: "12345",
+      blockchainAddress : 'www.google.com',
       createdAt: new Date(),
       updatedAt: new Date()
     },{
@@ -26,6 +29,7 @@ module.exports = {
       first_name: 'test4',
       last_name: 'test',
       password: "12345",
+      blockchainAddress : 'www.google.com',
       createdAt: new Date(),
       updatedAt: new Date()
     },{
@@ -33,6 +37,7 @@ module.exports = {
       first_name: 'test5',
       last_name: 'test',
       password: "12345",
+      blockchainAddress : 'www.google.com',
       createdAt: new Date(),
       updatedAt: new Date()
     },{
@@ -40,6 +45,7 @@ module.exports = {
       first_name: 'test6',
       last_name: 'test',
       password: "12345",
+      blockchainAddress : 'www.google.com',
       createdAt: new Date(),
       updatedAt: new Date()
     },{
@@ -47,6 +53,7 @@ module.exports = {
       first_name: 'test7',
       last_name: 'test',
       password: "12345",
+      blockchainAddress : 'www.google.com',
       createdAt: new Date(),
       updatedAt: new Date()
     },{
@@ -54,6 +61,7 @@ module.exports = {
       first_name: 'test8',
       last_name: 'test',
       password: "12345",
+      blockchainAddress : 'www.google.com',
       createdAt: new Date(),
       updatedAt: new Date()
     },{
@@ -61,6 +69,7 @@ module.exports = {
       first_name: 'test9',
       last_name: 'test',
       password: "12345",
+      blockchainAddress : 'www.google.com',
       createdAt: new Date(),
       updatedAt: new Date()
     },{
@@ -68,6 +77,7 @@ module.exports = {
       first_name: 'test10',
       last_name: 'test',
       password: "12345",
+      blockchainAddress : 'www.google.com',
       createdAt: new Date(),
       updatedAt: new Date()
     }], {});

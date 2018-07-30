@@ -10,6 +10,7 @@ const candidateRouter = require('./routes/candidates')
 const electionRouter = require('./routes/elections')
 const communityRouter = require('./routes/communities')
 const conjunctionRouter = require('./routes/conjunction')
+const conjunctionElectionRouter = require('./routes/conjunctionElection')
 const adminRouter = require('./routes/admins')
 const loginRouter = require('./routes/login')
 
@@ -32,6 +33,7 @@ app.use('/api/elections' , electionRouter)
 app.use('/api/communities' , communityRouter)
 app.use('/api/conjunctions' , conjunctionRouter)
 app.use('/api/admins', adminRouter)
+app.use('/api/conjunctionElections', conjunctionElectionRouter)
 app.use('/api/login', loginRouter)
 
 

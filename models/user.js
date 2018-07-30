@@ -54,11 +54,16 @@ module.exports = (sequelize, DataTypes) => {
     password:{
       type : Sequelize.STRING,
       allowNull : false
+    },
+    blockchainAddress:{
+      type : Sequelize.STRING,
+      allowNull : false,
     }
   }, {});
 
   User.associate = function(models) {
     User.belongsToMany(models.Community,{through:models.CommunityUser})
+    User.belongsToMany(models.Election,{through:models.ElectionUser})
   };
 
   User.hook('beforeSave', (user, options) => {

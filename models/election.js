@@ -26,6 +26,7 @@ module.exports = (sequelize, DataTypes) => {
   Election.associate = function(models) {
     Election.belongsTo(models.Community);
     Election.hasMany(models.Candidate);
+    Election.belongsToMany(models.User,{through:models.ElectionUser})
   };
 
   return Election;
