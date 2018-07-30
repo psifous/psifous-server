@@ -4,11 +4,11 @@ module.exports = {
   register : (req,res)=>{
     db.Candidate.create({
       name:req.body.name,
-      image:req.body.image,
+      image:req.file.imageURL,
       description : req.body.description,
       createdAt: new Date(),
       updatedAt: new Date(),
-      electionId: +(req.body.ElectionId)
+      ElectionId: +(req.body.ElectionId)
     })
     .then((value)=>{
       res.status(200).json({
