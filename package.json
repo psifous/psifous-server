@@ -5,7 +5,7 @@
   "scripts": {
     "start": "nodemon ./bin/www",
     "test": "nyc mocha --timeout 10000",
-    "coverage" : "nyc --reporter=Icov --reporter=text-Icov npm test"
+    "coverage": "nyc --reporter=Icov --reporter=text-Icov npm test"
   },
   "dependencies": {
     "@google-cloud/storage": "^1.7.0",
