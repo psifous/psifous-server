@@ -5,7 +5,8 @@
     "database": "yhhltlbn",
     "host": "stampy.db.elephantsql.com",
     "dialect": "postgres",
-    "port": 5432
+    "port": 5432,
+    "operatorsAliases": false
   },
   "test": {
     "username": "root",
